@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+  --soft-red: #ec775f;
+  --cyan: #76b5bc;
+  --dark-brown: #382314;
+  --medium-brown: #93867b;
+  --cream: #f8e9dd;
+  --orange: #fffaf5;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "DM Sans";
+  font-size: 15px;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 300px;
+}
+
+.balance {
+  background: var(--soft-red);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.balance-value,
+.graphic h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.variation-wrapper{
+  text-align: end;
+}
+
+.total-value {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--dark-brown)
+}
+
+.variation {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.graphic {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  background: var(--orange);
+  border-radius: 10px;
+}
+
+.graphic h1 {
+  margin-bottom: 2rem;
+}
+
+.graphic-bars {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .7rem;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 30px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: var(--soft-red);
+  cursor: pointer;
+}
+
+.o {
+  position: relative;
+  top: -2rem;
+  left: -.48rem;
+  background-color: #000;
+  border-radius: 5px;
+  opacity: 0;
+  color: var(--orange);
+  font-size: 13px;
+  padding: .2rem;
+
+}
+
+.bar:hover .o {
+  opacity: 1;
+}
+
+.bar:hover {
+  opacity: .7;
+}
+
+.bars-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bars-title span {
+  width: 30px;
+  text-align: center;
+  color: var(--medium-brown)
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--medium-brown);
+  margin: 1rem auto;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
